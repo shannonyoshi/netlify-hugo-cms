@@ -48,8 +48,8 @@ collections: # A list of collections the CMS should be able to edit
                 ],
             }
           - {
-              label: "Products",
-              name: products,
+              label: "Services",
+              name: services,
               widget: list,
               fields:
                 [
@@ -84,9 +84,9 @@ collections: # A list of collections the CMS should be able to edit
               - label: Text
                 name: text
                 widget: text
-      - file: "site/content/products/_index.md"
-        label: "Products Page"
-        name: "products"
+      - file: "site/content/services/_index.md"
+        label: "Services Page"
+        name: "services"
         fields:
           - { label: Title, name: title, widget: string }
           - { label: Image, name: image, widget: image }

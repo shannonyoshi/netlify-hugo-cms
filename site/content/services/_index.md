@@ -1,6 +1,6 @@
 ---
-title: Our Coffee
-type: products
+title: Training in The 21st Century
+type: services
 image: /img/products-jumbotron.jpg
 heading: What we offer
 description: >-
