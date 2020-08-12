@@ -54,7 +54,7 @@ collections: # A list of collections the CMS should be able to edit
               fields:
                 [
                   { label: "Image", name: "image", widget: "image" },
-                  { label: "Text", name: "text", widget: "text" },
+                  { label: "Text", name: "text", widget: "markdown" },
                 ],
             }
           - {

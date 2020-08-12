@@ -3,16 +3,16 @@ title: "Training in The 21st Century"
 subtitle: Support sustainable farming while enjoying a cup
 image: /img/home-jumbotron.jpg
 blurb:
-    heading: Why Training in the 21st Century?
-    text: "We create blended learning programs. These programs hold people’s attention as they learn new skills that enable peak performance while achieving strategic organizational objectives. Training is an essential tool for business to enable employees to be their most productive. How it’s provided is absolutely key."
+    heading: What is Training in the 21st Century?
+    text: "We create learning programs that enable peak performance to achieve strategic organizational objectives. Our blended learning solutions include a wide variety of methods that maximize understanding, retention, and utilization of new information. We work with our clients to identify, develop and implement a mix of tools customized to fit their specific needs and systems."
 intro:
-    heading: "What we offer"
-    text: "Unlike traditional training programs that involve substantial travel expenses and lost work time, our blended programs are a combination of multiple training methods tailored to cost-effectively fit your needs. We teach vital new business skills, increase productivity, and create a more effective workforce."
+    heading: "Why Use Blended Learning?"
+    text: "Our programs provide lasting impact and facilitate interpersonal relationships without the cost and inconvenience of face-to-face trainings. With blends of learning methodologies, we create exciting, engaging, effective real-time and self-paced programs."
 services:
     - image: img/orientation.jpg
-      text: "We work with our clients to identify and develop the most effective blend of training methods and tools that will meet their needs. We combine our experience in analysis and assessment, communications, facilitation, team building, coaching and leadership development, software implementation, and implementation of technical processes and procedures."
+      text: "Real-time interactive webinars and avatar-based 3D programs enable learners to interact and participate in discussions, which broaden, deepen, and personalize the experience."
     - image: /img/fish-game.png
-      text: "We utilize 3D virtual space training, face-to-face training, traditional E-learning, and mobile and social learning to create exciting, engaging, effective combinations of real-time and self-paced training programs, tailored to fit your needs. Cost effective training that accomplishes your goals is our goal!"
+      text: "In-depth e-learning and on-the-go mobile lessons in conjunction with ancillary handbooks, step-by-step guides, and access to additional relevant resources make our bespoke self-paced programs effective, engaging, and memorable."
 values:
     heading: Our Mission
     text: "Our mission is to empower companies and individuals to evolve in synchrony with a changing world."
