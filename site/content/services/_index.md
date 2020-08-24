@@ -1,10 +1,10 @@
 ---
 title: Training in The 21st Century
 type: services
-image: /img/products-jumbotron.jpg
+image: /img/Orientation.jpg
 heading: What we offer
 description: >-
-  We work with our clients to identify and develop the most effective blend of training methods and tools that will meet their needs. 
+  We work with our clients to identify and develop the most effective blend of training methods and tools that will meet their needs. For more information, watch the video below.
 intro:
   blurbs:
     - image: /img/illustrations-coffee.svg
