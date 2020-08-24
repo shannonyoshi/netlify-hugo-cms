@@ -5,8 +5,6 @@ image: /img/products-jumbotron.jpg
 heading: What we offer
 description: >-
   We work with our clients to identify and develop the most effective blend of training methods and tools that will meet their needs. 
-  -test1
-  -test2
 intro:
   blurbs:
     - image: /img/illustrations-coffee.svg
