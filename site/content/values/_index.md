@@ -25,7 +25,7 @@ values:
       relationships between organisms and their environment. What
       grows where and how it is grown are a matter of choice and
       careful consideration for nature and communities.
-    imageUrl: "/img/about-sustainable-farming.jpg"
+    imageUrl: "/img/Benjamin-Franklin-1.jpg"
   - heading: "Direct sourcing"
     text: >
       We want to truly empower the communities that bring amazing

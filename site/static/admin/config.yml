@@ -63,8 +63,11 @@ collections: # A list of collections the CMS should be able to edit
               widget: "object",
               fields:
                 [
+                  { label: "Image", name: "image", widget: "image" },
                   { label: "Heading", name: "heading", widget: string },
                   { label: "Text", name: "text", widget: "text" },
+                  {label: "Subtext", name: "subtext", widget: "text"}
+                  
                 ],
             }
       - file: "site/content/contact/_index.md"

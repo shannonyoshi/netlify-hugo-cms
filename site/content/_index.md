@@ -14,7 +14,9 @@ services:
     - image: /img/computer-lrg-3a-cropped.png
       text: "In-depth e-learning and on-the-go mobile lessons in conjunction with ancillary handbooks, step-by-step guides, and access to additional relevant resources make our custom self-paced programs effective, engaging, and memorable."
 values:
+    image: img/Ben-Franklin-1.jpg
     heading: Our Mission
-    text: "Our mission is to empower companies and individuals to evolve in synchrony with a changing world."
+    text: 'As Benjamin Franklin said, "Tell me and I forget, teach me and I remember, involve me and I learn."'
+    subtext: "Our mission is to empower companies and individuals to evolve in synchrony with a changing world."
 ---
 
