@@ -1,17 +1,14 @@
-<div class="flex-m mhn3-m mb4">
+<div class="flex-m mb4 w-100-m justify-center-m flex-column-m">
+  <div class="flex-m ph3-m center space-around-m">
+    <img src="{{.image}}" alt="{{.name}} head shot" class="db mb2" />
 
-  <div class="ph3-m w-50-m">
-    <img src="{{.image}}" alt="" class="db mb2">
+    <div class="ph3-m w-100-m">
+      <h3 class="f3 b lh-title mb1 mt3">{{.name}}</h3>
+      <h3 class="f3 b lh-title mb1 mt3">{{.position}}</h3>
+    </div>
   </div>
 
-  <div class="ph3-m w-50-m">
-    <h3 class="f3 b lh-title mb1">{{.name}}</h3>
-    <h3 class="f3 b lh-title mb1">{{.position}}</h3>
-    
-    {{range .description}}
-    <p>{{.text}}</p>
-    {{end}}
-
-  </div>
-
+  {{range .description}}
+  <p class="ph3-m center">{{.text}}</p>
+  {{end}}
 </div>

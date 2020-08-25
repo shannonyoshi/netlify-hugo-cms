@@ -11,11 +11,12 @@
       {{ partial "media-block-reverse" $element }}
     {{ end }}
   {{ end }}
-  
-  {{range $index, $element :=.Params.bios}}
-    {{partial "bio" $element}}
-  {{end}}  
+  <h3 class="f3 b lh-title mb3 mt3">Bio</h3>
+    {{range $index, $element :=.Params.bios}}
+      {{partial "bio" $element}}
+    {{end}}  
 
+  
 </div>
 
 

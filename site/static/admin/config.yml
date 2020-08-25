@@ -206,11 +206,11 @@ collections: # A list of collections the CMS should be able to edit
               - { label: Text, name: text, widget: text }
               - { label: Image, name: imageUrl, widget: image }
           - label: Bios
-              name: bios
-              widget: list
-              fields: 
-                - {label: Image, name: image, widget: image}
-                - { label: Name, name: name, widget: string }
-                - { label: Position, name: position, widget: string}
-                - {label: Description, name: description, widget: list, fields:
-                  - {label: Text, name: text, widget: string}}
+            name: bios
+            widget: list
+            fields: 
+              - {label: Image, name: image, widget: image}
+              - { label: Name, name: name, widget: string }
+              - { label: Position, name: position, widget: string}
+              - {label: Description, name: description, widget: list, fields:
+                 - {label: Text, name: text, widget: string}}
