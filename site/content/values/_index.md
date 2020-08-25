@@ -4,6 +4,7 @@ image: /img/fish-game.png
 values:
   - heading: "Mission"
     text: "Our mission is to empower companies and individuals to evolve in synchrony with a changing world."
+    subtext: "Training in the 21st Century™ brings together the knowledge and expertise needed, customized for each project. Working individually and in teams, we use our creativity, experience, knowledge, skills and abilities to enhance the growth and development of our clients. We utilize tried and true training methodologies combined with new technologies to enable companies and individuals to evolve proactively with a changing world."
     imageUrl: /img/Ben-Franklin-1.jpg
 bios:
   - image: img/headshot.jpeg

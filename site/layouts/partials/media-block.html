@@ -1,12 +1,19 @@
-<div class="flex-m mhn3-m mb4">
+<div class="bg-grey-1">
 
-  <div class="ph3-m w-50-m">
-    <img src="{{.imageUrl}}" alt="" class="db mb2">
+  <div class="flex-m mhn3-m mb4 ph3 pt4 mw7 center">
+    
+    <div class="ph3-m w-50-m pt4">
+      <img src="{{.imageUrl}}" alt="" class="db mb2">
+    </div>
+    
+    <div class="ph3-m w-50-m pt4">
+      <h3 class="f3 b lh-title mb1 colp">{{.heading}}</h3>
+      <p class="colg4">{{.text}}</p>
+      {{if .subtext}}
+      <p class="colg4 pb4">{{.subtext}}</p>
+      {{end}}
+    </div>
+    
   </div>
-
-  <div class="ph3-m w-50-m">
-    <h3 class="f3 b lh-title mb1">{{.heading}}</h3>
-    <p>{{.text}}</p>
-  </div>
-
+  
 </div>

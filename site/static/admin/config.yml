@@ -204,6 +204,7 @@ collections: # A list of collections the CMS should be able to edit
             fields:
               - { label: Heading, name: heading, widget: string }
               - { label: Text, name: text, widget: text }
+              - { label: Subtext, name: subtext, widget: text }
               - { label: Image, name: imageUrl, widget: image }
           - label: Bios
             name: bios
