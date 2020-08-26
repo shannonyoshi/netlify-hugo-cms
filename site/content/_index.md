@@ -1,13 +1,13 @@
 ---
-title: "Training in The 21st Century"
-subtitle: Support sustainable farming while enjoying a cup
+title: 
+subtitle: 
 image: /img/home-jumbotron.jpg
 blurb:
     heading: What is Training in the 21st Century?
     text: "We create learning programs that enable peak performance to achieve strategic organizational objectives. Our blended learning solutions include a wide variety of methods that maximize understanding, retention, and utilization of new information. We work with our clients to identify, develop and implement a mix of tools customized to fit their specific needs and systems."
 intro:
     heading: "Why Use Blended Learning?"
-    text: "Our programs provide lasting impact and facilitate interpersonal relationships without the cost and inconvenience of face-to-face trainings. With blends of learning methodologies, we create exciting, engaging, effective real-time and self-paced programs."
+    text: "Our programs provide lasting impact and facilitate interpersonal relationships without the cost and inconvenience of face-to-face trainings. With blends of learning methodologies, we create exciting, engaging, effective real-time and self-paced programs. Learn more on our Services page."
 services:
     - image: img/2nd-Life-ver-learn.png
       text: "Real-time interactive webinars and avatar-based 3D programs enable learners to interact and participate in discussions, which broaden, deepen, and personalize the experience."

@@ -1,5 +1,6 @@
 ---
-title: "Values"
+title: 
+subtitle:
 image: /img/fish-game.png
 values:
   - heading: "Mission"
