@@ -10,6 +10,7 @@ intro:
 
   blurbs:
     - image: /img/eTraining-2b-process.jpg
+      alt: "Training process cycle"
       text: >
         We work with our clients to identify and develop the most effective blend of training methods and tools that will meet their needs.
 main:

@@ -6,7 +6,7 @@
 
 {{ partial "2-up" .Params }}
 
-{{ partial "text-and-image" (dict "image" .Params.values.image "heading" .Params.values.heading "text" .Params.values.text "subtext" .Params.values.subtext "buttonText" "Learn more" "buttonLink" "/values") }}
+{{ partial "text-and-image" (dict "image" .Params.values.image "alt" .Params.values.alt "heading" .Params.values.heading "text" .Params.values.text "subtext" .Params.values.subtext "buttonText" .Params.values.button_text "buttonLink" .Params.values.button_link) }}
 
 {{ partial "blog" . }}
 
