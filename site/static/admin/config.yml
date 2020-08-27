@@ -18,7 +18,7 @@ collections: # A list of collections the CMS should be able to edit
       - { label: "Image", name: "image", widget: "image", required: false }
       - { label: "Alt", name: "alt", widget: "string", required: false}
       - { label: "Body", name: "body", widget: "markdown" }
-      - name: "pages"
+  - name: "pages"
     label: "Pages"
     files:
       - file: "site/content/_index.md"
@@ -28,6 +28,8 @@ collections: # A list of collections the CMS should be able to edit
           - { label: "Title", name: "title", widget: "string" }
           - { label: "Subtitle", name: "subtitle", widget: "string" }
           - { label: "Image", name: "image", widget: "image" }
+          - {label: "Services Button", name: "services_button", widget: "string"},
+          - {label: "Values Button", name: "values_button", widget: "string"},          - 
           - {
               label: "Blurb",
               name: "blurb",
@@ -55,7 +57,7 @@ collections: # A list of collections the CMS should be able to edit
               fields:
                 [
                   { label: "Image", name: "image", widget: "image" },
-                  { label: "Alt", name: "alt", widget: "string"}
+                  { label: "Alt", name: "alt", widget: "string"},
                   { label: "Text", name: "text", widget: "text" },
                 ],
             }
@@ -69,10 +71,7 @@ collections: # A list of collections the CMS should be able to edit
                   { label: "Alt", name: "alt", widget: "string"}
                   { label: "Heading", name: "heading", widget: "string" },
                   { label: "Text", name: "text", widget: "text" },
-                  {label: "Subtext", name: "subtext", widget: "text"},
-                  {label: "Button Text", name: "button_text", widget: "string"},
-                  {label: "Button Link", name: "button_link", widget: "string"}
-                  
+                  {label: "Subtext", name: "subtext", widget: "text"}                  
                 ],
             }
       - file: "site/content/contact/_index.md"
