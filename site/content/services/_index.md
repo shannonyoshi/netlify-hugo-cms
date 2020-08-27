@@ -4,22 +4,36 @@ subtitle:
 type: services
 image: /img/Orientation.jpg
 intro:
-  heading: What is Blended Learning?
+  heading: Services
   description: >-
-    To learn more about Blended Learning programs, and see an example of a self-paced e-learning, see the example below.
+    Want to learn more about Blended Learning programs, and see an example of a self-paced e-learning? See our blog post,
+  blog_title: "What is Blended Learning?"
+  blog_link: "/post/what-is-blended-learning"
 
-  blurbs:
-    - image: /img/eTraining-2b-process.jpg
-      alt: "Training process cycle"
-      text: >
-        We work with our clients to identify and develop the most effective blend of training methods and tools that will meet their needs.
-main:
-  heading: Great coffee with no compromises
-  description: >
-    We hold our coffee to the highest standards from the shrub to the cup.
-    That’s why we’re meticulous and transparent about each step of the coffee’s
-    journey. We personally visit each farm to make sure the conditions are
-    optimal for the plants, farmers and the local environment.
+blurbs:
+      - heading: Overview
+      - image: /img/eTraining-2b-process.jpg
+        alt: Training creation process
+        description:
+          - text: We work with our clients to develop the most effective blend of training methods and tools that will meet their needs. We use our experience in communication, facilitation, change management, analysis, and assessment to create training using a wide range of learning techniques and technologies with emphasis on adult learning practices and principals which are backed by current brain research.
+          - text: Working with subject matter experts, stakeholders, and existing resources, we create effective training to keep your employees engaged and at peak performance. We will work with you to convert face-to-face presentations into new, interactive, interpersonal formats; update existing e-learnings and information resources; and design, develop, and implement new curricula, including train-the-trainer components and assessments to evaluate learning.
+      - heading: Avatar-Based 3D Virtual Environment Training
+        image:
+        alt:
+        description:
+        - text: Our 3D courses and programs are designed to be intriguing, engaging, and memorable for participants as they gain important knowledge and skills needed for their work. Face-to-face, instructor-led training sparks great ideas, broadens and deepens learning, and strengthens personal connections. Training in 3D environments sparks great ideas, broadens and deepens learning, and strengthens personal connections which are often missing or severely limited in many forms of virtual and remote learning. Plus, it’s fun! Learning is enjoyable when it’s done right.
+        - text: These environments provide a sense of presence with and connection to others as well as a feeling of dynamism. Interactivity makes training interesting, captivating, and unforgettable.  Role playing and simulations enhance people’s ability to learn through the practice and application of new knowledge in real-life situations, which increases retention and utilization. 
+        - text: We offer many 3D training services. We design, develop, and facilitate new curricula including train-the-trainer sessions with additional assistance available for in-house trainers. Additionally, we convert existing curricula into 3D interactive, interpersonal learning sessions with role plays, experiential and game based exercises, and discussions of key information. Currently available courses include Sexual Harassment ( for employees and supervisors/managers, Change Management, and Communication and Teamwork. 
+      - heading: Traditional Virtual Learning
+        image:
+        alt:
+        description:
+          - text: Blah blah something.
+
+# main:
+#   - heading: Services Overview
+#   description: >
+#    Our 3D courses and programs are designed to be intriguing, engaging, and memorable for participants as they gain important knowledge and skills needed for their work. Face-to-face, instructor-led training sparks great ideas, broadens and deepens learning, and strengthens personal connections. Training in 3D environments sparks great ideas, broadens and deepens learning, and strengthens personal connections which are often missing or severely limited in many forms of virtual and remote learning. Plus, it’s fun! Learning is enjoyable when it’s done right.
   # image1:
   #   alt: A close-up of a paper filter filled with ground coffee
   #   image: /img/products-grid3.jpg
