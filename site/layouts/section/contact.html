@@ -1,13 +1,13 @@
 {{ define "main" }}
 
-<div class="ph3 bg-off-white">
+<div class="ph3 bg-grey-1">
 	<div class="center mw6 pv3">
 
-		<img src="{{ .Params.logo }}" alt="" class="db w4 center pv4">
+		<img src="{{ .Params.logo }}" alt="Training in the 21st Century Logo" class="db w4 center pv4">
 
 		{{ .Content }}
 
-		<div class="flex-ns mb3">
+		<div class="flex-column-ns mb3">
 	        	{{ range .Params.contact_entries }}
 				<div>
 					<h4 class="f4 b lh-title mb2 primary">{{ .heading }}</h4>
@@ -16,7 +16,7 @@
 			{{ end }}
 		</div>
 
-		{{ partial "contact-form" . }}
+		<!-- {{ partial "contact-form" . }} -->
 
 	</div>
 </div>
