@@ -5,7 +5,7 @@ type: services
 image: /img/Orientation.jpg
 intro:
   heading: Services
-  description: >-
+  text: >-
     Want to learn more about Blended Learning programs, and see an example of a self-paced e-learning? See our blog post,
   blog_title: "What is Blended Learning?"
   blog_link: "/post/what-is-blended-learning"
@@ -28,7 +28,13 @@ blurbs:
         image:
         alt:
         description:
-          - text: Blah blah something.
+          - text: Webinars, E-Learning, and Mobile and Social Learning are proven traditional forms of virtual training that save organizations time and money. A picture is worth a thousand words, that’s why we work to synchronize graphics, key words, and audio to reinforce key points of training and ensure that lessons are easy to follow, remember, and utilize. 
+          - text: We work with clients to identify important information to include in e-learning and mobile learning solutions and ensure the training is effective through assessments. By incorporating interactive elements, we enhance engagement, build comprehension, reinforce retention, and keep learning fun.
+          - text: Our mobile lessons focus on key topics that can be completed quickly and easily by employees on-the-go. These short segments can be completed on mobile devices or on the computer—anytime, anywhere.
+          - text: Social learning, or informal learning within organizations, plays a role in addressing organizational learning needs. As part of a blended learning approach, social media—such as videos, podcasts, internal blogs, video chats, wiki pages, etcetera— are used to facilitate employees ability to share knowledge and learn from each other. We offer guidance on how to develop these strategies and encourage peer-to-peer knowledge sharing.
+
+
+
 
 # main:
 #   - heading: Services Overview

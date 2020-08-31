@@ -2,6 +2,16 @@
 
 {{ partial "jumbotron" (dict "imageUrl" .Params.image "title" .Title) }}
 
+{{ partial "short-text" .Params.intro}}
+
+
+
+
+
+
+
+
+
 {{ partial "4-up" ( dict "intro" .Params.intro "blurbs" .Params.blurbs) }}
 
 
