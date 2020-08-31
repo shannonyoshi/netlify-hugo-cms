@@ -1,5 +1,5 @@
 ---
-title: 
+title: "About Us"
 subtitle:
 image: /img/fish-game.png
 values:

@@ -1,5 +1,5 @@
 ---
-title: 
+title: "Home"
 subtitle: 
 image: /img/home-jumbotron.jpg
 services_button: See all Services
