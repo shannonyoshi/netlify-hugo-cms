@@ -1,45 +1,22 @@
 ---
-title: "Values"
-image: /img/about-jumbotron.jpg
+title: 
+subtitle:
+image: /img/fish-game.png
 values:
-  - heading: "Shade-grown coffee"
-    text: >
-      Coffee is a small tree or shrub that grows in the forest
-      understory in its wild form, and traditionally was grown
-      commercially under other trees that provided shade. The
-      forest-like structure of shade coffee farms provides habitat for
-      a great number of migratory and resident species.
-    imageUrl: "/img/about-shade-grown.jpg"
-  - heading: "Single origin"
-    text: >
-      Single-origin coffee is coffee grown within a single known
-      geographic origin. Sometimes, this is a single farm or a
-      specific collection of beans from a single country. The name of
-      the coffee is then usually the place it was grown to whatever
-      degree available.
-    imageUrl: "/img/about-single-origin.jpg"
-  - heading: "Sustainable farming"
-    text: >
-      Sustainable agriculture is farming in sustainable ways based on
-      an understanding of ecosystem services, the study of
-      relationships between organisms and their environment. What
-      grows where and how it is grown are a matter of choice and
-      careful consideration for nature and communities.
-    imageUrl: "/img/Benjamin-Franklin-1.jpg"
-  - heading: "Direct sourcing"
-    text: >
-      We want to truly empower the communities that bring amazing
-      coffee to you. That’s why we reinvest 20% of our profits into
-      farms, local businesses and schools everywhere our coffee is
-      grown. You can see the communities grow and learn more about
-      coffee farming on our blog.
-    imageUrl: "/img/about-direct-sourcing.jpg"
-  - heading: "Reinvest profits"
-    text: >
-      We want to truly empower the communities that bring amazing
-      coffee to you. That’s why we reinvest 20% of our profits into
-      farms, local businesses and schools everywhere our coffee is
-      grown. You can see the communities grow and learn more about
-      coffee farming on our blog.
-    imageUrl: "/img/about-reinvest-profits.jpg"
+  - heading: "Mission"
+    text: "Our mission is to empower companies and individuals to evolve in synchrony with a changing world."
+    subtext: "Training in the 21st Century™ brings together the knowledge and expertise needed, customized for each project. Working individually and in teams, we use our creativity, experience, knowledge, skills and abilities to enhance the growth and development of our clients. We utilize tried and true training methodologies combined with new technologies to enable companies and individuals to evolve proactively with a changing world."
+    imageUrl: /img/Ben-Franklin-1.jpg
+bios:
+  - image: img/headshot.jpeg
+    name: "Carla Kincaid-Yoshikawa"
+    position: "Founder & Managing Director"
+    description: 
+    - text: "Carla Kincaid-Yoshikawa has worked as an Organization Development and Training Consultant for over 20 years. Working with Fortune 500 companies and organizations in the public and non-profit sectors, she has conducted team building, leadership development, strategic planning and change management processes. And she has designed, developed and facilitated training programs on a wide array of topics, from team building and leadership development to stress management, processes and procedures, and software navigation. A deep curiosity about how people learn, change and grow has created a core resource for her ongoing work in Learning and Development."
+    - text: "As a Learning and Development professional, Carla takes pride in projects she has worked on because they simultaneously: increase organizational effectiveness; enhance the commitment, satisfaction, personal growth and professional development of organization members; and improve bottom lines."
+    - text: "Her career includes design and development of both instructor-led and self-paced learning courses. She has created and facilitated face-to-face courses on a wide range of topics, and first became interested in avatar-based 3D environments as a tool for learning while recuperating from a severe injury. Her son loaned her several of his video games to pass the time and she was amazed at her own reaction to playing these games: she found herself engaged by the drive to solve the puzzles and get to the next level—and realized what an incredible learning tool these games could be. In addition, she realized that 3D environments not only offered opportunities for activity-based learning, but they also provided the sense of being present with others that is so important for engaging attention and connection—and missing from other forms of virtual learning."
+    - text:  "Early in Carla’s career, as she was completing her degree in Organization Development, she sought opportunities to work with experienced consultants as a way to learn the most effective techniques for Training and Development. In that endeavor, she was fortunate to work with several excellent consulting firms: Stonefield Learning Group (Knowledge Management, Change Management and Organizational Design); and Integration Strategies (Internal Organizational Collaboration and Integration)."
+    - text: "In her work with these organizations, she learned to utilize best practices and the highest standards for work with clients—in research and analysis, curriculum design and presentation, interactive meeting design and facilitation, and coaching and follow-up. Later work with another exceptional consulting firm, Collaborative Strategies (an industry analyst and research firm that specializes in collaboration technologies and best practices), gave her a foundation for understanding the technologies that impact so many industries and professions, including Training and Development. Her experience there, researching and using cutting edge collaboration technologies, enabled her to recognize and incorporate best practices for these tools into her work."
+    - text: "Over the past few years, 3D technology has made huge leaps in capabilities and usability. Carla  is excited to be involved in the emergence of this resource for Training and Development. She believes 3D virtual environments present an amazing array of new, powerful techniques and processes for learning and is working to incorporate the extraordinary benefits of 3D learning  into the blended learning services of Training in the 21st Century™."
+    - text: "Carla’s undergraduate degree in Cross-Cultural Communications from San Francisco State University gave her a grounding in the communications issues that are often a barrier to effective  collaboration. This perspective was a valuable asset when she earned a Masters Degree in  Organization Development from the University of San Francisco and began working in that field.  These aspects of her educational background continue to inform her work in training, facilitation and change management."
 ---

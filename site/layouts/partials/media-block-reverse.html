@@ -1,12 +1,15 @@
-<div class="flex-m mhn3-m mb4">
+<div class="flex-m mhn3-m mb4 ph3 pt4">
 
   <div class="ph3-m w-50-m order-last-m">
-    <img src="{{.imageUrl}}" alt="" class="db mb2">
+    <img src="{{.imageUrl}}" alt="Ben Franklin with a kite" class="db mb2">
   </div>
 
   <div class="ph3-m w-50-m">
-    <h3 class="f3 b lh-title mb1">{{.heading}}</h3>
-    <p>{{.text}}</p>
+    <h3 class="f3 b lh-title mb1 colp">{{.heading}}</h3>
+    <p class="colg3">{{.text}}</p>
+    {{if .subtext}}
+    <p class="colg3">{{.subtext}}</p>
+    {{end}}
   </div>
 
 </div>
