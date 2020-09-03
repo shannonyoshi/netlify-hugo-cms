@@ -10,5 +10,5 @@ contact_entries:
     text: "info@traininginthe21stcentury.com"
 ---
 
-Contact us today for a free consultation, to take a tour of our 3D world or to learn more. We can't wait to hear from you!
+Contact us today for a free consultation, to take a tour of our 3D world, or to learn more. We can't wait to hear from you!
 
