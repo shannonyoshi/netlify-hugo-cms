@@ -6,17 +6,26 @@
 	</a>
 
 	<!-- Primary Nav -->
-	<ul class="flex b grey-3">
+	<ul class="flex b grey-3" id="nav">
 		<li><a href="/" class="pa3 no-underline db colp">Home</a></li> 
 
 		<li><a href="/services" class="pa3 no-underline db colp">Services</a></li>
 
 		<li><a href="/values" class="pa3 no-underline db colp">About Us</a></li>
 
-		<!-- <li><a href="/post" class="pa3 no-underline db colp">Blog</a></li> -->
+		<li><a href="/post" class="pa3 no-underline db colp">Blog</a></li>
 
 		<li><a href="/contact" class="pa3 no-underline db colp">Contact</a></li>
 	</ul>
 	
 
 </nav>
+
+<script type="text/javascript">
+	var loc = window.location.pathname.split("/")[1];
+	$('#nav').find('a').each(function() {
+		$(this).toggleClass('active', $(this).attr("href")==`/${loc}`)
+	})
+</script>
+
+
