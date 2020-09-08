@@ -1,7 +1,7 @@
 ---
 title: 
 subtitle: 
-image: /img/home-jumbotron.jpg
+image: /img/triptych.png
 services_button: See all Services
 values_button: Learn more
 blog_button: See more posts

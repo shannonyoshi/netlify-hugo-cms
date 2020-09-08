@@ -2,7 +2,7 @@
 title: 
 subtitle:
 type: services
-image: /img/Orientation.jpg
+image: /img/diversity.png
 # intro:
 #   heading: Services
 #   text: >-
@@ -10,28 +10,39 @@ image: /img/Orientation.jpg
 #   blog_title: "What is Blended Learning?"
 #   blog_link: "/post/what-is-blended-learning"
 
-blurbs:
-      - heading: Overview
-      - image: /img/eTraining-2b-process.jpg
+overview:
+        heading: Overview
+        image: /img/eTraining-2b-process.jpg
         alt: Training creation process
         description:
           - text: We work with our clients to develop the most effective blend of training methods and tools that will meet their diverse needs. We use our experience in communication, facilitation, change management, analysis, and assessment to create training that incorporates a wide range of learning techniques and technologies emphasizing adult learning principles and practices supported by current brain research.
           - text: Working with subject matter experts, stakeholders, and existing resources, we create effective training to keep your employees engaged and at peak performance. We will work with you to convert face-to-face presentations into new, interactive, interpersonal formats; update existing e-learnings and information resources; and design, develop, and implement new curricula, including train-the-trainer components and assessments to evaluate learning.
-      - heading: Avatar-Based 3D Virtual Environment Training
-        image:
-        alt:
-        description:
-        - text: Our 3D courses and programs are designed to be intriguing, engaging, and memorable for participants as they gain important knowledge and skills needed for their work. Face-to-face, instructor-led training sparks great ideas, broadens and deepens learning, and strengthens personal connections. Training in 3D environments also sparks great ideas, broadens and deepens learning, and strengthens personal connections——important outcomes which are  very difficult to achieve using other forms of virtual and remote training. Plus, it’s fun! Learning is enjoyable when it’s done right.
-        - text: These environments provide a sense of presence with and connection to others as well as a feeling of dynamism. Interactivity makes training interesting, captivating, and unforgettable.  Role playing and simulations enhance people’s ability to learn through the practice and application of new knowledge in real-life situations, which increases retention and utilization. 
-        - text: We offer many 3D training services. We design, develop, and facilitate new curricula including train-the-trainer sessions with additional assistance available for in-house trainers. And, we convert existing curricula into 3D interactive, interpersonal learning sessions with role plays, experiential and game based exercises, and discussions of key information. Currently available courses include Sexual Harassment (for employees and supervisors/managers), Change Management, and Communication and Teamwork. 
-      - heading: Traditional Virtual Learning
-        image:
-        alt:
-        description:
-          - text: Webinars, E-Learning, and Mobile and Social Learning are proven traditional forms of virtual training that save organizations time and money. A picture is worth a thousand words, so we work to synchronize relevant graphics, key words, and audio to reinforce key points and ensure that lessons are easy to follow, remember, and utilize. 
-          - text: We work with clients to identify important information to include in e-learning and mobile learning solutions; and we ensure the training is effective through assessments. By incorporating interactive elements, we enhance engagement, build comprehension, reinforce retention, and keep learning fun.
-          - text: Our mobile lessons focus on key topics that can be completed quickly and easily by employees on-the-go. Learners access these short segments on mobile devices or on computers——anytime, anywhere.
-          - text: Social learning, or informal learning within organizations, plays a role in addressing organizational learning needs. As part of a blended learning approach, social media—such as videos, podcasts, internal blogs, video chats, wiki pages, etcetera— are used to facilitate employees ability to share knowledge and learn from each other. We offer guidance on how to develop these strategies and encourage peer-to-peer knowledge sharing.
+
+blurbs:
+  - heading: "Avatar-Based 3D Virtual Environment Training"
+    image: /img/2nd-Life-ver1.png
+    alt: "Person being pulled through computer screen onto virtual beach"
+    description:
+    - text: Our 3D courses and programs are designed to be intriguing, engaging, and memorable for participants as they gain important knowledge and skills needed for their work. Face-to-face, instructor-led training sparks great ideas, broadens and deepens learning, and strengthens personal connections. Training in 3D environments also sparks great ideas, broadens and deepens learning, and strengthens personal connections——important outcomes which are  very difficult to achieve using other forms of virtual and remote training. Plus, it’s fun! Learning is enjoyable when it’s done right.
+    - text: These environments provide a sense of presence with and connection to others as well as a feeling of dynamism. Interactivity makes training interesting, captivating, and unforgettable.  Role playing and simulations enhance people’s ability to learn through the practice and application of new knowledge in real-life situations, which increases retention and utilization. 
+    - text: We offer many 3D training services. We design, develop, and facilitate new curricula including train-the-trainer sessions with additional assistance available for in-house trainers. And, we convert existing curricula into 3D interactive, interpersonal learning sessions with role plays, experiential and game based exercises, and discussions of key information. Currently available courses include Sexual Harassment (for employees and supervisors/managers), Change Management, and Communication and Teamwork.
+
+
+main:
+  heading: Traditional Virtual Learning
+  description:
+    - text: Webinars, E-Learning, and Mobile and Social Learning are proven traditional forms of virtual training that save organizations time and money. A picture is worth a thousand words, so we work to synchronize relevant graphics, key words, and audio to reinforce key points and ensure that lessons are easy to follow, remember, and utilize. 
+    - text: We work with clients to identify important information to include in e-learning and mobile learning solutions; and we ensure the training is effective through assessments. By incorporating interactive elements, we enhance engagement, build comprehension, reinforce retention, and keep learning fun.
+  image1:
+    image: /img/iPad-3b1a.jpg
+    alt: "Person taking a course on their tablet"
+    text: Our mobile lessons focus on key topics that can be completed quickly and easily by employees on-the-go. Learners access these short segments on mobile devices or on computers——anytime, anywhere.
+  image2:
+    image: /img/webinar-trad-learning.jpg
+    alt: "Person taking a webinar"
+    text: Social learning, or informal learning within organizations, plays a role in addressing organizational learning needs. As part of a blended learning approach, social media—such as videos, podcasts, internal blogs, video chats, wiki pages, etcetera— are used to facilitate employees ability to share knowledge and learn from each other. We offer guidance on how to develop these strategies and encourage peer-to-peer knowledge sharing.
+ 
+ 
 
 
 

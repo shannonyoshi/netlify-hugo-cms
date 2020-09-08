@@ -1,7 +1,7 @@
 ---
-title: 
+title: "Values"
 subtitle:
-image: /img/fish-game.png
+image: /img/sit-lead-platform.png
 values:
   - heading: "Mission"
     text: "Our mission is to empower companies and individuals to evolve in synchrony with a changing world."

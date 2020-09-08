@@ -1,19 +1,12 @@
-<div class="bg-off-white pv4 mw7 center">
-
-    <div class="flex-ns flex-wrap mhn2-ns mb3">
-      {{ range .blurbs }}
-      <div class="ph2-ns w-100-ns mb4">
-        <img
-          src="{{ .image }}"
-          alt="{{.alt}}"
-          class="center db mb3"
-				/>
-				<h3 class="f3 b lh-title mb1 primary">{{.heading}}</h3>
-				{{range .description}}
-				<p>{{ .text }}</p>
-				{{end}}
-      </div>
-      {{ end }}
-    </div>
-  </div>
+<div class="ph2-ns w-100-ns">
+  <h3 class="f2 b lh-title mb1 primary center">{{.heading}}</h3>
+  {{$imgsrc := .image}} 
+  {{ $imgalt := .alt }} 
+  {{$middle:=div (len .description) 2}} 
+  {{range $index, $element := .description}}
+   {{if eq $index $middle}}
+  <img src="{{ $imgsrc }}" alt="{{$imgalt}}" class="center db mb3" />
+  {{end}}
+  <p class="center colg4 mw7 ph3-l">{{ $element.text }}</p>
+  {{end}}
 </div>
