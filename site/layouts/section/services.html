@@ -4,20 +4,39 @@
 
 <!-- {{ partial "short-text" .Params.intro}} -->
 
-<div class="bg-grey-1 pv4">
-  <div class="flex-ns flex-wrap mhn2-ns mb3 mw7 center">
-    {{ partial "4-up" .Params.overview }}
-  </div>
-</div>
+{{ $bg := ""}}
 
-{{range .Params.blurbs}}
-  {{  partial "image-left" .  }}
+{{range $index, $element:= .Params.blurbs}}
+{{ $bg = cond (modBool $index 2) "bg-grey-1" "bg-off-white" }}
+  {{ if eq $element.type "large-image"}}
+    <div class="{{$bg}} pv4">
+      {{ partial "4-up" $element }}
+    </div>
+  {{end}}
+  {{ if eq $element.type "image-left"}}
+    <div class="{{$bg}} pv4">
+      {{ partial "image-left" $element  }}
+    </div>
+  {{end}}
+  
+  {{ if eq $element.type "two-image"}}
+    <div class="{{$bg}} pv4">
+      {{  partial "multi-image" $element  }}
+    </div>
+  {{ end }}
 {{ end }}
 
-{{  partial "multi-image" .Params.main  }}
+{{if eq $bg "bg-grey-1"}}
+    {{$bg = "bg-off-white"}}
+{{else}}
+    {{$bg = "bg-grey-1"}}
+{{end}}
 
 
-<div class="bg-off-white pv4 mw7 center">
+
+
+
+<div class="{{$bg}} pv4 mw7 center">
   <h3 class="f2 b lh-title mb1 cols center">Testimonials</h3>
   {{ range .Params.testimonials }}
     {{ partial "blockquote" . }}
