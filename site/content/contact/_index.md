@@ -6,7 +6,7 @@ contact_entries:
   # - heading: Location
   #   text: "San Francisco, CA"
   - heading: Phone
-    text: "(415) 215-3634"
+    text: "+1 (415) 215-3634"
   - heading: Email
     text: "info@traininginthe21stcentury.com"
 ---

@@ -4,39 +4,21 @@
 
 <!-- {{ partial "short-text" .Params.intro}} -->
 
-{{ $bg := ""}}
+{{$primary:= slice "bg-grey-1" "colp" "colg4"}}
+{{$secondary:= slice "bg-off-white" "cols" "colg3"}}
 
 {{range $index, $element:= .Params.blurbs}}
-{{ $bg = cond (modBool $index 2) "bg-grey-1" "bg-off-white" }}
-  {{ if eq $element.type "large-image"}}
-    <div class="{{$bg}} pv4">
-      {{ partial "4-up" $element }}
-    </div>
-  {{end}}
-  {{ if eq $element.type "image-left"}}
-    <div class="{{$bg}} pv4">
-      {{ partial "image-left" $element  }}
-    </div>
-  {{end}}
-  
-  {{ if eq $element.type "two-image"}}
-    <div class="{{$bg}} pv4">
-      {{  partial "multi-image" $element  }}
-    </div>
-  {{ end }}
-{{ end }}
+{{ $colors := cond (modBool $index 2) $primary $secondary }}
+{{$template:=print $element.type ".html"}}
+<!-- $element.type should be image-left, image-right, large-image, two-image -->
 
-{{if eq $bg "bg-grey-1"}}
-    {{$bg = "bg-off-white"}}
-{{else}}
-    {{$bg = "bg-grey-1"}}
+  {{partial $template (dict "data" $element "colors" $colors)}}
+
 {{end}}
 
 
 
-
-
-<div class="{{$bg}} pv4 mw7 center">
+<div class="bg-off-white pv4 mw7 center">
   <h3 class="f2 b lh-title mb1 cols center">Testimonials</h3>
   {{ range .Params.testimonials }}
     {{ partial "blockquote" . }}
