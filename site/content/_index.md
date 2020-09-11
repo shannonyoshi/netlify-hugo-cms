@@ -4,14 +4,13 @@ subtitle:
 image: /img/triptych.png
 services_button: See all Services
 values_button: Learn more
-blog_button: See more posts
 blurb:
     heading: What is Training in the 21st Century?
     text: "We create learning programs that enable peak performance to achieve strategic organizational objectives. Our blended learning solutions include a wide variety of methods that maximize understanding, retention, and utilization of new information. We work with our clients to identify, develop and implement a mix of tools customized to fit their specific needs and systems."
 intro:
     heading: "Why Use Blended Learning?"
     text: "Our programs provide lasting impact and facilitate interpersonal relationships without the cost and inconvenience of face-to-face trainings. With blends of learning methodologies, we create exciting, engaging, effective real-time and self-paced programs. Learn more on our Services page."
-services:
+services_intro:
     - image: img/2nd-Life-ver-learn.png
       alt: "Person reaching through computer"
       text: "Real-time interactive webinars and avatar-based 3D programs enable learners to interact and become involved in content-related activities and discussions, which broaden, deepen, and personalize the experience."

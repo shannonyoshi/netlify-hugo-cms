@@ -7,12 +7,16 @@
 {{$primary:= slice "bg-grey-1" "colp" "colg4"}}
 {{$secondary:= slice "bg-off-white" "cols" "colg3"}}
 
-{{range $index, $element:= .Params.blurbs}}
+{{range $index, $element:= .Params.services_list}}
 {{ $colors := cond (modBool $index 2) $primary $secondary }}
-{{$template:=print $element.type ".html"}}
-<!-- $element.type should be image-left, image-right, large-image, two-image -->
 
-  {{partial $template (dict "data" $element "colors" $colors)}}
+{{range $key, $value := $element}}
+{{$template := print $value.layout ".html"}}
+{{partial $template (dict "data" $value "colors" $colors)}}
+
+{{end}}
+
+
 
 {{end}}
 

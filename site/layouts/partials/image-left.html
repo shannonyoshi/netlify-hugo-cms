@@ -4,7 +4,7 @@
     <h3 class="{{index .colors 1}} f2 b lh-title mb1">{{.data.heading}}</h3>
 
       <div class="fl w-50-l ph2-1 pr3">  
-        <img src="{{data.image}}" alt={{.data.alt}} class="mb3">
+        <img src="{{.data.image}}" alt={{.data.alt}} class="mb3">
       </div>
       {{$textCol := index .colors 2}}
       {{ range .data.description }}
