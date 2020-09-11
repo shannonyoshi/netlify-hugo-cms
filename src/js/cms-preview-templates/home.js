@@ -23,10 +23,10 @@ export default class PostPreview extends React.Component {
 
         <div className="bg-grey-1 pv4">
           <div className="flex-l mhn1-l ph3 center mw7">
-            <h2 className="f2 b lh-title mb2 w-40-l">
+            <h2 className="f2 b lh-title mb2 w-40-l colp">
               {entry.getIn(["data", "blurb", "heading"])}
             </h2>
-            <p className="w-60-l mb0">
+            <p className="w-60-l mb0 colg4">
               {entry.getIn(["data", "blurb", "text"])}
             </p>
           </div>
@@ -34,42 +34,44 @@ export default class PostPreview extends React.Component {
 
         <div className="bg-off-white pv4">
           <div className="ph3 mw7 center">
-            <h2 className="f2 b lh-title mb2">
+            <h2 className="f2 b lh-title mb2 cols">
               {entry.getIn(["data", "intro", "heading"])}
             </h2>
-            <p className="mb4 mw6">{entry.getIn(["data", "intro", "text"])}</p>
+            <p className="mb4 mw6 colg3 center">{entry.getIn(["data", "intro", "text"])}</p>
 
             <div className="flex-ns mhn2-ns mb3">
-              {(entry.getIn(["data", "services"]) || []).map((product, i) => (
+              {(entry.getIn(["data", "services_intro"]) || []).map((product, i) => (
                 <div className="ph2-ns w-50-ns" key={i}>
                   <img
                     src={getAsset(service.get("image"))}
                     alt={service.get("alt")}
                     className="center db mb3"
-                    style={{ width: "240px" }}
-                  />
-                  <p>{service.get("text")}</p>
+                    />
+                  <p className="colg3">{service.get("text")}</p>
                 </div>
               ))}
             </div>
 
             <div className="tc">
-              <a href="services" className="btn raise">
+              <a href="/services" className="btn raise">
                 {entry.getIn(["data", "services_button"])}
               </a>
             </div>
           </div>
         </div>
 
+              {/* TODO: start here */}
         <div className="bg-grey-1 pv4">
           <div className="ph3 mw7 center">
             <div className="flex-l mhn2-l">
               <div className="w-40-l ph2-l">
-                <h2 className="f2 b lh-title mb2">
+                <h2 className="f2 b lh-title mb2 colp">
                   {entry.getIn(["data", "values", "heading"])}
                 </h2>
 
-                <p>{entry.getIn(["data", "values", "text"])}</p>
+                <p className="colg4">{entry.getIn(["data", "values", "text"])}</p>
+                <p className="colg4">{entry.getIn(["data", "values", "subtext"])}</p>
+
               </div>
 
               <div className="w-60-l ph2-l">
