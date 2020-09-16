@@ -21,19 +21,8 @@ export default class PostPreview extends React.Component {
     return (
       <div>
         <Jumbotron image={image} />
-        {/* <ShortText heading={entry.getIn(["data", "blurb", "heading"])} text={entry.getIn(["data", "blurb", "text"])}/> */}
-{/* 
-        <div className="bg-grey-1 pv4">
-          <div className="flex-l mhn1-l ph3 center mw7">
-            <h2 className="f2 b lh-title mb2 w-40-l colp">
-              {entry.getIn(["data", "blurb", "heading"])}
-            </h2>
-            <p className="w-60-l mb0 colg4">
-              {entry.getIn(["data", "blurb", "text"])}
-            </p>
-          </div>
-        </div> */}
-
+        <ShortText heading={entry.getIn(["data", "blurb", "heading"])} text={entry.getIn(["data", "blurb", "text"])}/>
+{/* partial:  2-up */}
         <div className="bg-off-white pv4">
           <div className="ph3 mw7 center">
             <h2 className="f2 b lh-title mb2 cols">
@@ -42,7 +31,7 @@ export default class PostPreview extends React.Component {
             <p className="mb4 mw6 colg3 center">{entry.getIn(["data", "intro", "text"])}</p>
 
             <div className="flex-ns mhn2-ns mb3">
-              {(entry.getIn(["data", "services_intro"]) || []).map((product, i) => (
+              {(entry.getIn(["data", "services_intro"]) || []).map((service, i) => (
                 <div className="ph2-ns w-50-ns" key={i}>
                   <img
                     src={getAsset(service.get("image"))}
@@ -62,7 +51,7 @@ export default class PostPreview extends React.Component {
           </div>
         </div>
 
-              {/* TODO: start here */}
+{/* partial:  text-and-image */}
         <div className="bg-grey-1 pv4">
           <div className="ph3 mw7 center">
             <div className="flex-l mhn2-l">
@@ -78,7 +67,7 @@ export default class PostPreview extends React.Component {
 
               <div className="w-60-l ph2-l">
                 <img
-                  src={entry.getIn(["data", "values", "image"])}
+                  src={getAsset(entry.getIn(["data", "values", "image"]))}
                   alt={entry.getIn(["data", "values", "alt"])}
                   className="mb3"
                 />
