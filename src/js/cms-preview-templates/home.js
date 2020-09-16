@@ -2,6 +2,7 @@ import React from "react";
 import format from "date-fns/format";
 
 import Jumbotron from "./components/jumbotron";
+import ShortText from "./components/short-text";
 
 export default class PostPreview extends React.Component {
   render() {
@@ -20,7 +21,7 @@ export default class PostPreview extends React.Component {
     return (
       <div>
         <Jumbotron image={image} />
-        <ShortText heading={entry.getIn(["data", "blurb", "heading"])} text={entry.getIn(["data", "blurb", "text"])}/>
+        {/* <ShortText heading={entry.getIn(["data", "blurb", "heading"])} text={entry.getIn(["data", "blurb", "text"])}/> */}
 {/* 
         <div className="bg-grey-1 pv4">
           <div className="flex-l mhn1-l ph3 center mw7">
