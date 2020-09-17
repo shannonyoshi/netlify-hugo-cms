@@ -3,8 +3,6 @@ title: "Contact"
 image: /img/contact-page.jpg
 logo: "/img/logo.svg"
 contact_entries:
-  # - heading: Location
-  #   text: "San Francisco, CA"
   - heading: Phone
     text: "+1 (415) 215-3634"
   - heading: Email
