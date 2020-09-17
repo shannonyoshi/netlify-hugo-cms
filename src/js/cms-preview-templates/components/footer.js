@@ -1,5 +1,4 @@
 import React from "react";
-import { render } from "node-sass";
 
 export default class Footer extends React.Component {
   render() {

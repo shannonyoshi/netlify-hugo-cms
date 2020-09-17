@@ -1,6 +1,7 @@
 import React from "react";
 
 import Nav from "./components/nav";
+import Footer from "./components/footer.js";
 
 const ContactEntry = ({ heading, text }) => (
   <div>
@@ -42,6 +43,7 @@ export default class ContactPreview extends React.Component {
             <ContactEntries data={contactEntries} />
           </div>
         </div>
+        <Footer/>
       </div>
     );
   }

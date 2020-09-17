@@ -4,6 +4,8 @@ import format from "date-fns/format";
 import Nav from "./components/nav";
 import Jumbotron from "./components/jumbotron";
 import ShortText from "./components/short-text";
+import Footer from "./components/footer.js";
+
 
 export default class HomePreview extends React.Component {
   render() {
@@ -84,6 +86,7 @@ export default class HomePreview extends React.Component {
             </div>
           </div>
         </div>
+        <Footer/>
       </div>
     );
   }
