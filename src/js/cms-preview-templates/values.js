@@ -28,7 +28,6 @@ const MediaBlock = ({ key, heading, subtext, text, image, alt, reverse }) => {
 };
 
 const Bio = ({ image, name, position, description }) => {
-console.log('description', description)
   return (
     <div className="ph3 flex-m mb4 w-100-m justify-center-m flex-column-m">
       <div className="flex-m ph3-m center space-around-m">
@@ -51,18 +50,23 @@ export default class ValuesPreview extends React.Component {
     const { entry, getAsset } = this.props;
 
     let image = getAsset(entry.getIn(["data", "image"]));
+    // NOTE: This hack is breaking the preview.
     // Bit of a nasty hack to make relative paths work as expected as a background image here
-    if (image && !image.fileObj) {
-      image =
-        window.parent.location.protocol +
-        "//" +
-        window.parent.location.host +
-        image;
-    }
+    // if (image && !image.fileObj) {
+
+    //   image =
+    //     window.parent.location.protocol +
+    //     "//" +
+    //     window.parent.location.host +
+    //     image;
+    // }
 
     const entryValues = entry.getIn(["data", "values"]);
-
     const values = entryValues ? entryValues.toJS() : [];
+    console.log('values', values)
+
+    const heading = entry.getIn(["data", "bio_heading"])
+    console.log('heading', heading)
 
     return (
       <div>
@@ -76,7 +80,7 @@ export default class ValuesPreview extends React.Component {
               text={value.text}
               heading={value.heading}
               // TODO: THIS WILL NEED TO BE UPDATED TO JUST "value.image" once live site is updated with new config.yml
-              image={value.imageUrl}
+              image={value.image}
               alt={value.alt}
               reverse={i % 2 === 0}
             />
