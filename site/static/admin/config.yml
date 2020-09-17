@@ -206,7 +206,6 @@ collections: # A list of collections the CMS should be able to edit
         fields:
           - { label: "Title", name: "title", widget: "string" }
           - { label: "Image", name: "image", widget: "image" }
-          - { label: "Alt", name: "alt", widget: "string" }
           - label: "Values"
             name: "values"
             widget: "list"
@@ -215,7 +214,7 @@ collections: # A list of collections the CMS should be able to edit
                 { label: "Heading", name: "heading", widget: "string" },
                 { label: "Text", name: "text", widget: "text" },
                 { label: "Subtext", name: "subtext", widget: "text" },
-                { label: "Image", name: "imageUrl", widget: "image" },
+                { label: "Image", name: "image", widget: "image" },
                 { label: "Alt", name: "alt", widget: "string" },
               ]
           - {

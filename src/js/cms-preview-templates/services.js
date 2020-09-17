@@ -8,14 +8,14 @@ export default class PostPreview extends React.Component {
   render() {
     const { entry, getAsset } = this.props;
     let image = getAsset(entry.getIn(["data", "image"]));
-
+    
     // Bit of a nasty hack to make relative paths work as expected as a background image here
     if (image && !image.fileObj) {
       image =
-        window.parent.location.protocol +
-        "//" +
-        window.parent.location.host +
-        image;
+      window.parent.location.protocol +
+      "//" +
+      window.parent.location.host +
+      image;
     }
     const primary = { bg: "bg-grey-1", h: "colp", text: "colg4" };
     const secondary = { bg: "bg-off-white", h: "cols", text: "colg3" };
@@ -34,7 +34,8 @@ export default class PostPreview extends React.Component {
                   alt={blurb.get("alt")}
                   className="center db mb3"
                   style={{ width: "240px" }}
-                />
+                  />
+               
                 <p>{blurb.get("text")}</p>
               </div>
             )

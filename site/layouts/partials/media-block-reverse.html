@@ -1,15 +1,18 @@
-<div class="flex-m mhn3-m mb4 ph3 pt4">
+<div class="bg-off-white">
 
-  <div class="ph3-m w-50-m order-last-m">
-    <img src="{{.imageUrl}}" alt="Ben Franklin with a kite" class="db mb2">
-  </div>
-
-  <div class="ph3-m w-50-m">
-    <h3 class="f2 b lh-title mb2 colp">{{.heading}}</h3>
-    <p class="colg3">{{.text}}</p>
-    {{if .subtext}}
-    <p class="colg3">{{.subtext}}</p>
-    {{end}}
+  <div class="flex-m mhn3-m mb4 ph3 pt4  mw7 center">
+    
+    <div class="ph3-m w-50-m order-last-m pt4">
+      <img src="{{.image}}" alt="{{.alt}}" class="db mb2">
+    </div>
+    
+    <div class="ph3-m w-50-m">
+      <h3 class="f2 b lh-title mb2 cols tr">{{.heading}}</h3>
+      <p class="colg3">{{.text}}</p>
+      {{if .subtext}}
+      <p class="colg3">{{.subtext}}</p>
+      {{end}}
+    </div>
   </div>
 
 </div>

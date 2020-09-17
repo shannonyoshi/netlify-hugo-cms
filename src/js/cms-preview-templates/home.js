@@ -4,7 +4,7 @@ import format from "date-fns/format";
 import Jumbotron from "./components/jumbotron";
 import ShortText from "./components/short-text";
 
-export default class PostPreview extends React.Component {
+export default class HomePreview extends React.Component {
   render() {
     const { entry, getAsset } = this.props;
     let image = getAsset(entry.getIn(["data", "image"]));
@@ -17,6 +17,7 @@ export default class PostPreview extends React.Component {
         window.parent.location.host +
         image;
     }
+
 
     return (
       <div>
