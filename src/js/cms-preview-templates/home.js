@@ -1,6 +1,7 @@
 import React from "react";
 import format from "date-fns/format";
 
+import Nav from "./components/nav";
 import Jumbotron from "./components/jumbotron";
 import ShortText from "./components/short-text";
 
@@ -21,6 +22,7 @@ export default class HomePreview extends React.Component {
 
     return (
       <div>
+        <Nav/>
         <Jumbotron image={image} />
         <ShortText heading={entry.getIn(["data", "blurb", "heading"])} text={entry.getIn(["data", "blurb", "text"])}/>
 {/* partial:  2-up */}

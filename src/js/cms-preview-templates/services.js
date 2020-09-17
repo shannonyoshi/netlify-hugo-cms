@@ -1,6 +1,7 @@
 import React from "react";
 import format from "date-fns/format";
 
+import Nav from "./components/nav";
 import Jumbotron from "./components/jumbotron";
 // import ShortText from "./components/short-text"
 
@@ -22,6 +23,7 @@ export default class PostPreview extends React.Component {
 
     return (
       <div>
+        <Nav/>
         {/* <Jumbotron image={image} /> */}
         {/* <ShortText heading={entry.getIn(["data", "intro", "heading"])} text={entry.getIn(["data", "intro", "text"])} blog_link={entry.getIn(["data", "intro", "blog_link"])} blog_text={entry.getIn(["data", "intro", "blog_text"])} /> */}
 

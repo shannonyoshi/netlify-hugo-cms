@@ -2,6 +2,7 @@ import React from "react";
 import { List } from "immutable";
 
 import Jumbotron from "./components/jumbotron";
+import Nav from "./components/nav";
 
 const MediaBlock = ({ key, heading, subtext, text, image, alt, reverse }) => {
   const imageContainerClassName = reverse
@@ -10,7 +11,6 @@ const MediaBlock = ({ key, heading, subtext, text, image, alt, reverse }) => {
   const bgCol = reverse ? "bg-grey-1" : "bg-off-white";
   const hCol = reverse ? "colp" : "cols";
   const txtCol = reverse ? "colg4" : "colg3";
-  console.log("image in Media Block Comp", image);
   return (
     <div className={bgCol} id={`Value${key}`}>
       <div className="flex-m mhn3-m mb4 ph3 pt4 mw7 center">
@@ -63,13 +63,10 @@ export default class ValuesPreview extends React.Component {
 
     const entryValues = entry.getIn(["data", "values"]);
     const values = entryValues ? entryValues.toJS() : [];
-    console.log('values', values)
-
-    const heading = entry.getIn(["data", "bio_heading"])
-    console.log('heading', heading)
 
     return (
       <div>
+        <Nav/>
         <Jumbotron image={image} />
         <div className="center">
 
@@ -79,7 +76,6 @@ export default class ValuesPreview extends React.Component {
               subtext={value.subtext}
               text={value.text}
               heading={value.heading}
-              // TODO: THIS WILL NEED TO BE UPDATED TO JUST "value.image" once live site is updated with new config.yml
               image={value.image}
               alt={value.alt}
               reverse={i % 2 === 0}
