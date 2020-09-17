@@ -3,6 +3,7 @@ import { List } from "immutable";
 
 import Jumbotron from "./components/jumbotron";
 import Nav from "./components/nav";
+// import Footer from "./components/footer";
 
 const MediaBlock = ({ key, heading, subtext, text, image, alt, reverse }) => {
   const imageContainerClassName = reverse
@@ -94,6 +95,7 @@ export default class ValuesPreview extends React.Component {
             image={getAsset(bio.get("image"))}
           />
         ))}
+        {/* <Footer/> */}
       </div>
     );
   }
