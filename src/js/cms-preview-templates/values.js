@@ -52,7 +52,6 @@ export default class ValuesPreview extends React.Component {
 
     let image = getAsset(entry.getIn(["data", "image"]));
     // Bit of a nasty hack to make relative paths work as expected as a background image here
-    //  TODO: uncomment the following 3 lines!!
     if (image && !image.fileObj) {
       image =
         window.parent.location.protocol +
@@ -62,29 +61,13 @@ export default class ValuesPreview extends React.Component {
     }
 
     const entryValues = entry.getIn(["data", "values"]);
-    console.log("entryValues", entryValues);
 
     const values = entryValues ? entryValues.toJS() : [];
-    console.log("values[0].imageUrl", values[0].imageUrl);
 
     return (
       <div>
         <Jumbotron image={image} />
-        {/* <div className="bg-off-white pv4">
-        <div className="mw7 center ph3 pt4"> */}
         <div className="center">
-          {/* {entry.getIn(["data", "values"] ||
-            []).map((value, index) => 
-              <MediaBlock
-                key={index}
-                heading={value.get("heading")}
-                text={value.get("text")}
-                subtext={value.get("subtext")}
-                image={value.get("image")}
-                alt={value.get("alt")}
-                reverse={i % 2 === 0}
-              />
-            )} */}
 
           {values.map((value, i) => (
             <MediaBlock
@@ -92,15 +75,14 @@ export default class ValuesPreview extends React.Component {
               subtext={value.subtext}
               text={value.text}
               heading={value.heading}
+              // TODO: THIS WILL NEED TO BE UPDATED TO JUST "value.image" once live site is updated with new config.yml
               image={value.imageUrl}
               alt={value.alt}
               reverse={i % 2 === 0}
             />
           ))}
         </div>
-        {/* </div>
-      </div> */}
-        <p>Heading should be below this</p>
+        {/* TODO: check if bio heading shows up after config.yml updates */}
         <h3 class="f2 b lh-title mb3 mt3 cols ph4-l mw7 center">
           {entry.getIn(["data", "bio_heading"])}
         </h3>
