@@ -1,6 +1,6 @@
 {{ define "main" }}
 
-{{ partial "jumbotron" (dict "imageUrl" .Params.image "title" .Title) }}
+{{ partial "jumbotron" (dict "imageUrl" .Params.image) }}
 
 <div class="center">
 
@@ -11,7 +11,7 @@
       {{ partial "media-block-reverse" $element }}
     {{ end }}
   {{ end }}
-  <h3 class="f3 b lh-title mb3 mt3 cols ph4-l">Meet the Founder</h3>
+  <h3 class="f2 b lh-title mb3 mt3 cols ph4-l mw7 center">Meet the Founder</h3>
     {{range $index, $element :=.Params.bios}}
       {{partial "bio" $element}}
     {{end}}  

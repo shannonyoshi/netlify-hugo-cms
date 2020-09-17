@@ -20,7 +20,7 @@
 					<li><a href="/" class="link">Home</a></li>
 					<li><a href="/services" class="link">Services</a></li>
 					<li><a href="/values" class="link">About Us</a></li>
-					<li><a href="/blog" class="link">Blog</a></li>
+					<!-- <li><a href="/blog" class="link">Blog</a></li> -->
 					<li><a href="/contact" class="link">Contact</a></li>
 				</ul>
 			</div>
@@ -54,3 +54,6 @@
 {{ partial "svg" . }}
 
 <script src="/app.js"></script>
+<script>
+$('img').bind("contextmenu", function(e){return false;});
+</script>

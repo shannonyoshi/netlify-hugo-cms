@@ -1,6 +1,6 @@
 /* Focus states */
 input:focus, textarea:focus, a:focus, button:focus {
-  box-shadow: inset 0 0 0 2px var(--primary);
+  /* box-shadow: inset 0 0 0 2px var(--primary); */
   outline: 0!important;
 }
 
@@ -12,12 +12,13 @@ input:focus, textarea:focus, a:focus, button:focus {
 .raise:hover,
 .raise:focus {
   transition: var(--hover-transition);
-  transform: translateY(-.12rem) translateZ(0);
+  transform: translateY(-.2rem) translateZ(0);
 }
 
 .raise:active {
   transition: var(--hover-transition);
   opacity: .5;
+  outline: 0!important;
 }
 
 .hide-child .child {
