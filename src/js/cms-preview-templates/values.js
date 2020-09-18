@@ -84,15 +84,16 @@ export default class ValuesPreview extends React.Component {
           ))}
         </div>
         {/* TODO: check if bio heading shows up after config.yml updates */}
-        <h3 class="f2 b lh-title mb3 mt3 cols ph4-l mw7 center">
+        <h3 className="f2 b lh-title mb3 mt3 cols ph4-l mw7 center">
           {entry.getIn(["data", "bio_heading"])}
         </h3>
-        {(entry.getIn(["data", "bios"]) || []).map((bio) => (
+        {(entry.getIn(["data", "bios"]) || []).map((bio,index) => (
           <Bio
             name={bio.get("name")}
             position={bio.get("position")}
             description={(bio.get("description")||[]).map(desc=>desc.get("text"))}
             image={getAsset(bio.get("image"))}
+            key={`Bio${index}`}
           />
         ))}
         <Footer/>
