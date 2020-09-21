@@ -1,5 +1,5 @@
 ---
-title: 
+title: Home
 subtitle: 
 image: /img/triptych.png
 services_button: See all Services

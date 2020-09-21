@@ -1,12 +1,13 @@
 ---
 title: "Values"
-subtitle:
 image: /img/sit-lead-platform.png
 values:
   - heading: "Mission"
     text: "Our mission is to empower companies and individuals to evolve in synchrony with a changing world."
     subtext: "Training in the 21st Century™ brings together the knowledge and expertise needed, customized for each project. Working individually and in teams, we use our creativity, experience, knowledge, skills and abilities to enhance the growth and development of our clients. We utilize tried and true training methodologies——combined with new technologies and developing knowledge of how our brains learn——to enable companies and individuals to evolve proactively with a changing world."
     image: /img/Ben-Franklin-1.jpg
+    alt: "Benjamin Franklin flying a kite"
+bio_heading: "Meet the Founder"
 bios:
   - image: img/headshot.jpeg
     name: "Carla Kincaid-Yoshikawa"

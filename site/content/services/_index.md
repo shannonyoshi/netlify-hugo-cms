@@ -3,12 +3,12 @@ title: Services
 
 type: services
 image: /img/diversity.png
-# intro:
-#   heading: Services
-#   text: >-
-#     Want to learn more about Blended Learning programs, and see an example of a self-paced e-learning? See our blog post,
-#   blog_title: "What is Blended Learning?"
-#   blog_link: "/post/what-is-blended-learning"
+intro:
+  heading: Services
+  text: >-
+    Want to learn more about Blended Learning programs, and see an example of a self-paced e-learning? See our blog post,
+  blog_title: "What is Blended Learning?"
+  blog_link: "/post/what-is-blended-learning"
 
 services_list:
   - single_image:
