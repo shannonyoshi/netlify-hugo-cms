@@ -3,7 +3,7 @@ import format from "date-fns/format";
 
 import Nav from "./components/nav";
 import Jumbotron from "./components/jumbotron";
-import ImageLorR from "./components/l-or-r-image";
+import ImageLorR from "./components/image-l-or-r";
 import LargeImage from "./components/large-image";
 import TwoImage from "./components/two-image";
 import Footer from "./components/footer.js";
@@ -24,15 +24,14 @@ export default class ServicesPreview extends React.Component {
     //   image;
 
     const entryServices = entry.getIn(["data", "services_list"]);
-
     const services = (entryServices ? entryServices.toJS() : []).map(
       (service) => Object.values(service)[0]
     );
-    console.log("services", services);
     return (
       <div>
         <Nav />
         <Jumbotron image={image} />
+        {/* NOTE: This will be added once blog post, "What is Blended Learning" is added  */}
         {/* <ShortText heading={entry.getIn(["data", "intro", "heading"])} text={entry.getIn(["data", "intro", "text"])} blog_link={entry.getIn(["data", "intro", "blog_link"])} blog_text={entry.getIn(["data", "intro", "blog_text"])} /> */}
 
         {services.map((service, index) => (
@@ -66,14 +65,10 @@ export default class ServicesPreview extends React.Component {
   }
 }
 
-const LayoutService = ({service, index}) => {
-
-  console.log('service', service)
-  console.log("index", index);
+const LayoutService = ({ service, index }) => {
   const primary = { bg: "bg-grey-1", h: "colp", text: "colg4" };
   const secondary = { bg: "bg-off-white", h: "cols", text: "colg3" };
   const colors = index % 2 === 0 ? primary : secondary;
-  // console.log("colors", colors);
   switch (service.layout) {
     case "large-image":
       return <LargeImage colors={colors} {...service} />;

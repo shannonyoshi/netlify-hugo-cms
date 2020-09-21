@@ -14,14 +14,14 @@ export default class LargeImage extends React.Component {
             </h3>
             {description.map((desc, index) =>
               index === middle ? (
-                <div>
+                <div key={`li${index}`}>
                   <img src={image} alt={alt} className="center db mb3" />
                   <p className={`${colors["text"]} center mw7 ph3-l`}>
                     {desc.text}
                   </p>
                 </div>
               ) : (
-                <p className={`${colors["text"]} center mw7 ph3-l`}>
+                <p className={`${colors["text"]} center mw7 ph3-l`} key={`li${index}`}>
                   {desc.text}
                 </p>
               )

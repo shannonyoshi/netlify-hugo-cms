@@ -5,7 +5,7 @@ export default class Nav extends React.Component {
     return (
       <nav className="overflow-x-scroll overflow-x-visible-ns flex justify-between items-center center bg-white divider-grey relative">
         {/* <!-- Logo --> */}
-        <a href="/" className="pa1 db mr4 h-100 w4 flex-none">
+        <a href="#" className="pa1 db mr4 h-100 w4 flex-none">
           <img
             src="/img/logo.svg"
             alt="Training in the 21st Century logo"
@@ -16,19 +16,19 @@ export default class Nav extends React.Component {
         {/* <!-- Primary Nav --> */}
         <ul className="flex-ns b grey-3" id="nav">
           <li>
-            <a href="/" className="pa3 no-underline db colp raise">
+            <a href="#" className="pa3 no-underline db colp raise">
               Home
             </a>
           </li>
 
           <li>
-            <a href="/services" className="pa3 no-underline db colp raise">
+            <a href="#" className="pa3 no-underline db colp raise">
               Services
             </a>
           </li>
 
           <li>
-            <a href="/values" className="pa3 no-underline db colp raise">
+            <a href="#" className="pa3 no-underline db colp raise">
               About Us
             </a>
           </li>
@@ -36,7 +36,7 @@ export default class Nav extends React.Component {
           {/* <!-- <li><a href="/post" className="pa3 no-underline db colp raise">Blog</a></li> --> */}
 
           <li>
-            <a href="/contact" className="pa3 no-underline db colp raise">
+            <a href="#" className="pa3 no-underline db colp raise">
               Contact
             </a>
           </li>
