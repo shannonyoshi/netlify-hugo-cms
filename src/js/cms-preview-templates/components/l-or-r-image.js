@@ -2,7 +2,7 @@ import React from "react";
 
 export default class LargeImage extends React.Component {
   render() {
-    const { image, alt, heading, colors, description } = this.props;
+    const { colors, image, alt, heading, description } = this.props;
     return (
       <div class={`${colors[bg]} pv4`}>
         <div class="flex-ns flex-wrap mhn2-ns mb3 mw7 center">
