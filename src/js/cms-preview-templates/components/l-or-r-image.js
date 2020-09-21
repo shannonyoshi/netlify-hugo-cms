@@ -2,22 +2,19 @@ import React from "react";
 
 export default class LargeImage extends React.Component {
   render() {
-    const { colors, image, alt, heading, description } = this.props;
+    const { colors, image, alt, heading, description, direction } = this.props;
     return (
-      <div class={`${colors[bg]} pv4`}>
-        <div class="flex-ns flex-wrap mhn2-ns mb3 mw7 center">
-          <div class="ph2-ns w-100-ns">
-            <h3 class={`${colors[h]} f2 b lh-title mb1 center"`}>{heading}</h3>
-            {description.map((text, index) => {
-              {
-                index === Math.floor(description.length / 2) ? (
-                  <img src={image} alt={alt} class="center db mb3" />
-                ) : null;
-              }
+      <div class={`${colors["bg"]} pv4`}>
+        <div class="ph3 center mw7">
+          <h3 class={`${colors["h"]} f2 b lh-title mb1`}>{heading}</h3>
 
-              <p class={`${colors[text]} center mw7 ph3-l`}>{text}</p>;
-            })}
+          <div class={`f${direction} w-50-l ph2-1 pr3`}>
+            <img src={image} alt={alt} class="mb3" />
           </div>
+
+          {description.map((desc, index) => (
+            <p class={`${colors["text"]} center mw7 ph3-l`}>{desc.text}</p>
+          ))}
         </div>
       </div>
     );
