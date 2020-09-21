@@ -72,7 +72,7 @@ const LayoutService = (service, index)=> {
     case "large-image":
       return <LargeImage colors={colors} {...service}/>
     case "two-image":
-      break;
+      return <TwoImage colors={colors} {...service}/>
     case "image-left" || "image-right":
       break;
   }

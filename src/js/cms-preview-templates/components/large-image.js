@@ -12,8 +12,8 @@ export default class LargeImage extends React.Component {
             <h3 className={`${colors["h"]} f2 b lh-title mb1 center"`}>
               {heading}
             </h3>
-            {description.map((desc, i) =>
-              i === middle ? (
+            {description.map((desc, index) =>
+              index === middle ? (
                 <div>
                   <img src={image} alt={alt} className="center db mb3" />
                   <p className={`${colors["text"]} center mw7 ph3-l`}>
