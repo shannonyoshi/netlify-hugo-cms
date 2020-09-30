@@ -82,6 +82,6 @@ const LayoutService = ({ service, index }) => {
       const direction = service.layout === "image-left" ? "l" : "r";
       return <ImageLorR colors={colors} {...service} direction={direction} />;
     default:
-      return <p>Default LayoutService case</p>
+      break;
   }
 };
