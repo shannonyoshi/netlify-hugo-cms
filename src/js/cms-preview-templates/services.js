@@ -24,9 +24,13 @@ export default class ServicesPreview extends React.Component {
     //   image;
 
     const entryServices = entry.getIn(["data", "services_list"]);
-    const services = (entryServices ? entryServices.toJS() : []).map(
-      (service) => Object.values(service)[0]
-    );
+    console.log('entryServices', entryServices)
+    const services = entryServices ? entryServices.toJS() : []
+    // console.log('servicesObject', servicesObject)
+    // const services = (entryServices ? entryServices.toJS() : []).map(
+    //   (service) => Object.values(service)
+    // );
+    // console.log('services', services)
     return (
       <div>
         <Nav />
@@ -78,6 +82,6 @@ const LayoutService = ({ service, index }) => {
       const direction = service.layout === "image-left" ? "l" : "r";
       return <ImageLorR colors={colors} {...service} direction={direction} />;
     default:
-      break;
+      return <p>Default LayoutService case</p>
   }
 };
