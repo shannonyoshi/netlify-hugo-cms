@@ -116,7 +116,7 @@ collections: # A list of collections the CMS should be able to edit
               label: "Services List",
               name: services_list,
               widget: list,
-              fields:
+              types:
                 [
                   {
                     label: "Single Image",
