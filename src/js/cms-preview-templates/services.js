@@ -24,9 +24,8 @@ export default class ServicesPreview extends React.Component {
     //   image;
 
     const entryServices = entry.getIn(["data", "services_list"]);
-    const services = (entryServices ? entryServices.toJS() : []).map(
-      (service) => Object.values(service)[0]
-    );
+    const services = entryServices ? entryServices.toJS() : []
+
     return (
       <div>
         <Nav />
