@@ -1,6 +1,6 @@
 {{ define "main" }}
 
-{{ partial "jumbotron" (dict "imageUrl" .Params.image "title" .Title "subtitle" .Params.subtitle) }}
+{{ partial "jumbotron" (dict "imageUrl" .Params.image) }}
 
 {{ partial "short-text" .Params.blurb}}
 
@@ -8,6 +8,6 @@
 
 {{ partial "text-and-image" (dict "image" .Params.values.image "alt" .Params.values.alt "heading" .Params.values.heading "text" .Params.values.text "subtext" .Params.values.subtext "buttonText" .Params.values_button) }}
 
-{{ partial "blog" . }}
+<!-- {{ partial "blog" . }} -->
 
 {{ end }}

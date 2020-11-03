@@ -1,0 +1,29 @@
+
+<div class="{{index .colors 0}} pv4">
+
+  <div class="ph3 center mw7">
+    <h3 class="{{index .colors 1}} f2 b lh-title mb1">{{.data.heading}}</h3>
+    {{$textCol := index .colors 2}}
+    {{ range .data.description }}
+    <p class="{{$textCol}} ph3-l mw7 center">{{.text}}</p>
+    
+    {{ end }}
+    <div class="flex-ns mhn2-ns mb3">
+      
+      <div class="w-50-ns ph2-ns">
+        <img src="{{ .data.image1.image }}" alt="{{ .data.image1.alt }}" class="center db mb3 h5">
+        <p class="{{$textCol}}">{{.data.image1.text}}</p>
+      </div>
+  
+      <div class="w-50-ns ph2-ns">
+        <img src="{{ .data.image2.image }}" alt="{{ .data.image2.alt }}" class="center db mb3 h5">
+        <p class="{{$textCol}}">{{.data.image2.text}}</p>
+      </div>
+    </div>
+    
+    
+  </div>
+</div>
+
+
+</div>

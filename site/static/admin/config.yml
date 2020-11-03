@@ -16,7 +16,7 @@ collections: # A list of collections the CMS should be able to edit
       - { label: "Publish Date", name: "date", widget: "datetime" }
       - { label: "Intro Blurb", name: "description", widget: "text" }
       - { label: "Image", name: "image", widget: "image", required: false }
-      - { label: "Alt", name: "alt", widget: "string", required: false}
+      - { label: "Alt", name: "alt", widget: "string", required: false }
       - { label: "Body", name: "body", widget: "markdown" }
   - name: "pages"
     label: "Pages"
@@ -26,17 +26,20 @@ collections: # A list of collections the CMS should be able to edit
         name: "home"
         fields:
           - { label: "Title", name: "title", widget: "string" }
-          - { label: "Subtitle", name: "subtitle", widget: "string" }
           - { label: "Image", name: "image", widget: "image" }
-          - {label: "Services Button", name: "services_button", widget: "string"},
-          - {label: "Values Button", name: "values_button", widget: "string"},          - 
+          - {
+              label: "Services Button",
+              name: "services_button",
+              widget: "string",
+            }
+          - { label: "Values Button", name: "values_button", widget: "string" }
           - {
               label: "Blurb",
               name: "blurb",
               widget: "object",
               fields:
                 [
-                  { label: "Heading", name: "heading", widget: string },
+                  { label: "Heading", name: "heading", widget: "string" },
                   { label: "Text", name: "text", widget: "text" },
                 ],
             }
@@ -48,16 +51,18 @@ collections: # A list of collections the CMS should be able to edit
                 [
                   { label: "Heading", name: "heading", widget: "string" },
                   { label: "Text", name: "text", widget: "text" },
+                  { label: "Blog Title", name: "blog_title", widget: "string" },
+                  { label: "Blog Link", name: "blog_link", widget: "string" },
                 ],
             }
           - {
-              label: "Services",
-              name: "services",
-              widget: "object",
+              label: "Services Intro",
+              name: "services_intro",
+              widget: "list",
               fields:
                 [
                   { label: "Image", name: "image", widget: "image" },
-                  { label: "Alt", name: "alt", widget: "string"},
+                  { label: "Alt", name: "alt", widget: "string" },
                   { label: "Text", name: "text", widget: "text" },
                 ],
             }
@@ -68,10 +73,10 @@ collections: # A list of collections the CMS should be able to edit
               fields:
                 [
                   { label: "Image", name: "image", widget: "image" },
-                  { label: "Alt", name: "alt", widget: "string"}
+                  { label: "Alt", name: "alt", widget: "string" },
                   { label: "Heading", name: "heading", widget: "string" },
                   { label: "Text", name: "text", widget: "text" },
-                  {label: "Subtext", name: "subtext", widget: "text"}                  
+                  { label: "Subtext", name: "subtext", widget: "text" },
                 ],
             }
       - file: "site/content/contact/_index.md"
@@ -79,96 +84,108 @@ collections: # A list of collections the CMS should be able to edit
         name: "contact"
         fields:
           - { label: "Title", name: "title", widget: "string" }
+          - { label: "Image", name: "image", widget: "image" }
           - { label: "Logo", name: "logo", widget: "image" }
-            { label: "Alt", name: "alt", widget: "string"}
+          - { label: "Alt", name: "alt", widget: "string" }
           - { label: "Body", name: "body", widget: "markdown" }
           - label: "Contact Entries"
             name: "contact_entries"
-            widget: "object"
-            fields: [
-              - {label: "Heading", name: "heading", widget: "string"},
-              - {label: "Text", name: "text", widget: "text"}
+            widget: "list"
+            fields:
+              [
+                { label: "Heading", name: "heading", widget: "string" },
+                { label: "Text", name: "text", widget: "text" },
               ]
-          - {label: "Form Title", name: "form_title", widget: "string"}
       - file: "site/content/services/_index.md"
         label: "Services Page"
         name: "services"
         fields:
           - { label: "Title", name: "title", widget: "string" }
-          - { label: "Subtitle", name: "subtitle", widget: "string" }
           - { label: "Image", name: "image", widget: "image" }
-          - { label: "Alt", name: "alt", widget: "string"}
-          - { label: "Heading", name: "heading", widget: "string" }
-          - { label: "Description", name: "description", widget: "string" }
           - {
-              - label: "Intro",
-                name: "intro",
-                widget: "object",
-                fields:
+              label: "Intro",
+              name: "intro",
+              widget: "object",
+              fields:
                 [
-                  - { label: "Heading", name: "heading", widget: "string" },
-                  - { label: "Description", name: "description", widget: "text" },
-                  
+                  { label: "Heading", name: "heading", widget: "string" },
+                  { label: "Description", name: "description", widget: "text" },
                 ],
-          }
+            }
           - {
-              - label: "Service",
-                name: "service",
-                widget: "object",
-                fields:
+              label: "Services List",
+              name: services_list,
+              widget: list,
+              types:
                 [
-                  - { label: "Image", name: "image", widget: "image" },
-                  - { label: "Alt", name: "alt", widget: "string"}
-                  - { label: "Description", 
-                      name: "description", 
-                      widget: "list", 
-                      fields:
-                        - {label: "Text", name: "text", widget: "text"},
-                        - {label: "List", name: "list", widget: "text"}
-                    },
+                  {
+                    label: "Single Image",
+                    name: single_image,
+                    widget: object,
+                    fields:
+                      [
+                        {
+                          label: "Layout",
+                          name: layout,
+                          widget: select,
+                          options: ["large-image", "image-left", "image-right"],
+                        },
+                        { label: "Heading", name: heading, widget: string },
+                        { label: "Image", name: image, widget: image },
+                        { label: "Alt", name: alt, widget: string },
+                        {
+                          label: "Description",
+                          name: description,
+                          widget: list,
+                          field: { label: "Text", name: text, widget: text },
+                        },
+                      ],
+                  },
+                  {
+                    label: "Two Image",
+                    name: two_image,
+                    widget: object,
+                    fields:
+                      [
+                        {
+                          label: "Layout",
+                          name: layout,
+                          widget: hidden,
+                          default: "two-image",
+                        },
+                        { label: "Heading", name: heading, widget: string },
+                        {
+                          label: "Description",
+                          name: description,
+                          widget: list,
+                          field: { label: "Text", name: text, widget: text },
+                        },
+                        {
+                          label: "Image1",
+                          name: image1,
+                          widget: object,
+                          fields:
+                            [
+                              { label: "Image", name: image, widget: image },
+                              { label: "Alt", name: alt, widget: string },
+                              { label: "Text", name: text, widget: text },
+                            ]
+                        },
+                        {
+                          label: "Image2",
+                          name: image2,
+                          widget: object,
+                          fields:
+                            [
+                              { label: "Image", name: image, widget: image },
+                              { label: "Alt", name: alt, widget: string },
+                              { label: "Text", name: text, widget: text },
+                            ],
+                        },
+                      ],
+                  },
                 ],
-          },
-            
-          # - {
-          #     label: Main,
-          #     name: main,
-          #     widget: object,
-          #     fields:
-          #       [
-          #         { label: Heading, name: heading, widget: string },
-          #         { label: Description, name: description, widget: text },
-          #         {
-          #           label: Image1,
-          #           name: image1,
-          #           widget: object,
-          #           fields:
-          #             [
-          #               { label: Image, name: image, widget: image },
-          #               { label: Alt, name: alt, widget: string },
-          #             ],
-          #         },
-          #         {
-          #           label: Image2,
-          #           name: image2,
-          #           widget: object,
-          #           fields:
-          #             [
-          #               { label: Image, name: image, widget: image },
-          #               { label: Alt, name: alt, widget: string },
-          #             ],
-          #         },
-          #         {
-          #           label: Image3,
-          #           name: image3,
-          #           widget: object,
-          #           fields:
-          #             [
-          #               { label: Image, name: image, widget: image },
-          #               { label: Alt, name: alt, widget: string },
-          #             ],
-          #         },
-          #       ],
-          #   }
+            }
           - {
               label: "Testimonials",
               name: "testimonials",
@@ -178,62 +195,46 @@ collections: # A list of collections the CMS should be able to edit
                   { label: "Quote", name: "quote", widget: "string" },
                   { label: "Author", name: "author", widget: "string" },
                   { label: "Title", name: "title", widget: "string" },
-                  { label: "Company", name: "company", widget: "string"},
-                  { label: "Website", name: "Website", widget: "string"},
+                  { label: "Company", name: "company", widget: "string" },
+                  { label: "Website", name: "website", widget: "string" },
                 ],
             }
-          # - { label: Full_image, name: full_image, widget: image }
-          # - {
-          #     label: Pricing,
-          #     name: pricing,
-          #     widget: object,
-          #     fields:
-          #       [
-          #         { label: Heading, name: heading, widget: string },
-          #         { label: Description, name: description, widget: string },
-          #         {
-          #           label: Plans,
-          #           name: plans,
-          #           widget: list,
-          #           fields:
-          #             [
-          #               { label: Plan, name: plan, widget: string },
-          #               { label: Price, name: price, widget: string },
-          #               {
-          #                 label: Description,
-          #                 name: description,
-          #                 widget: string,
-          #               },
-          #               { label: Items, name: items, widget: list },
-          #             ],
-          #         },
-          #       ],
-          #   }
+
       - file: "site/content/values/_index.md"
         label: "Values Page"
         name: "values"
         fields:
-          - { label: "Title", name: "title", widget: "string" },
-          - { label: "Subtitle", name: "subtitle", widget: "string" },
-          - { label: "Image", name: "image", widget: "image" },
-          - { label: "Alt", name: "alt", widget: "string"}
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Image", name: "image", widget: "image" }
           - label: "Values"
             name: "values"
             widget: "list"
-            fields: [
-              - { label: "Heading", name: "heading", widget: "string" },
-              - { label: "Text", name: "text", widget: "text" },
-              - { label: "Subtext", name: "subtext", widget: "text" },
-              - { label: "Image", name: "imageUrl", widget: "image" },
-              - { label: "Alt", name: "alt", widget: "string"}
+            fields:
+              [
+                { label: "Heading", name: "heading", widget: "string" },
+                { label: "Text", name: "text", widget: "text" },
+                { label: "Subtext", name: "subtext", widget: "text" },
+                { label: "Image", name: "image", widget: "image" },
+                { label: "Alt", name: "alt", widget: "string" },
               ]
+          - {
+              label: "Bio Heading",
+              name: "bio_heading",
+              widget: "string",
+              default: "Meet the Founder",
+            }
           - label: "Bios"
             name: "bios"
             widget: "list"
-            fields: [
-              - {label: "Image", name: "image", widget: "image"},
-              - { label: "Name", name: "name", widget: "string" },
-              - { label: "Position", name: "position", widget: "string"},
-              - {label: "Description", name: "description", widget: "list", fields:
-                 - {label: "Text", name: "text", widget: "string"},}
+            fields:
+              [
+                { label: "Image", name: "image", widget: "image" },
+                { label: "Name", name: "name", widget: "string" },
+                { label: "Position", name: "position", widget: "string" },
+                {
+                  label: "Description",
+                  name: "description",
+                  widget: "list",
+                  field: { label: "Text", name: "text", widget: "string" },
+                },
               ]
