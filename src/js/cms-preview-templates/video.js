@@ -11,7 +11,7 @@ export default class VideoPreview extends React.Component {
         <div class="bg-grey-1">
           <div class="mw7 center ph3 pv4">
             <h1 class="f2 lh-title b mb3 colp">
-              {entry.getIn(["data", "video_title"])}
+              {entry.getIn(["data", "title"])}
             </h1>
             {widgetFor("body")}
           </div>
