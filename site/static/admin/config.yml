@@ -18,6 +18,13 @@ collections: # A list of collections the CMS should be able to edit
       - { label: "Image", name: "image", widget: "image", required: false }
       - { label: "Alt", name: "alt", widget: "string", required: false }
       - { label: "Body", name: "body", widget: "markdown" }
+  - name: "video"
+    label: "video"
+    folder: "site/content/video"
+    create: true
+    fields: 
+      - { label: "Video Title", name: "video_title", widget: "string" }
+      - { label: "Body", name: "body", widget: "markdown" }
   - name: "pages"
     label: "Pages"
     files:
