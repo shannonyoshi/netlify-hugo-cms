@@ -4,8 +4,9 @@ image: img/contact-page-2022.jpg
 logo: img/partners-1.jpg
 alt: blah blah blah
 contact_entries:
-  - heading: Phone
-    text: +1 (415) 215-3634
+  - heading: "                                                Phone"
+    text: "                                                                               \
+      +1 (415) 215-3634"
   - heading: Email
     text: Carla@traininginthe21stcentury.com
 ---
