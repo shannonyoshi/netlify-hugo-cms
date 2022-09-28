@@ -57,20 +57,20 @@ bios:
           researching and using cutting edge collaboration technologies, enabled
           her to recognize and incorporate best practices for these tools into
           her work.
-      - text: "Her career includes design and development of both instructor-led and
-          self-paced learning courses for both in-person and remote learning.
-          She has created and facilitated face-to-face courses on a wide range
-          of topics, and first became interested in avatar-based 3D environments
-          as a tool for learning while recuperating from a severe injury. Her
-          son loaned her several of his video games to pass the time and she was
-          amazed at her own reaction to playing these games: she found herself
-          engaged by the drive to solve the puzzles and get to the next
-          level—and realized what an incredible learning tool these games could
-          be. In addition, she realized that 3D environments not only offered
-          opportunities for activity-based learning, but they also provided the
-          sense of being present with others that is so important for engaging
-          attention and connection——the missing ingredients from other forms of
-          virtual learning."
+      - "Her career includes design and development of both instructor-led and
+        self-paced learning courses for both in-person and remote learning. She
+        has created and facilitated face-to-face courses on a wide range of
+        topics, and first became interested in avatar-based 3D environments as a
+        tool for learning while recuperating from a severe injury. Her son
+        loaned her several of his video games to pass the time and she was
+        amazed at her own reaction to playing these games: she found herself
+        engaged by the drive to solve the puzzles and get to the next level—and
+        realized what an incredible learning tool these games could be. In
+        addition, she realized that 3D environments not only offered
+        opportunities for activity-based learning, but they also provided the
+        sense of being present with others that is so important for engaging
+        attention and connection—the missing ingredients from other forms of
+        virtual learning."
       - text: Over the past few years, 3D technology has made huge leaps in capabilities
           and usability. Carla  is excited to be involved in the emergence of
           this resource for Training and Development. She believes 3D virtual
