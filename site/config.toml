@@ -7,3 +7,14 @@ title = "T21C"
 # See configuration options for more details: 
 # https://gohugo.io/getting-started/configuration/#toml-configuration
 disableKinds = ["RSS", "taxonomy", "taxonomyTerm"]
+
+[security]
+enableInlineShortcodes = false
+[security.exec]
+allow = ['^dart-sass-embedded$', '^go$', '^npx$', '^postcss$']
+osEnv = ['(?i)^((HTTPS?|NO)_PROXY|PATH(EXT)?|APPDATA|TE?MP|TERM)$']
+[security.funcs]
+getenv = ['^HUGO_', '^CONTEXT']
+[security.http]
+methods = ['(?i)GET|POST']
+urls = ['.*']

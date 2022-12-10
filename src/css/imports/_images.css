@@ -2,6 +2,11 @@ img {
   max-width: 100%;
 }
 
+.headshot {
+  max-width: 300px;
+  max-height: 300px;
+}
+
 /* Remove border-radiius from full-width images */
 img:not(.w-100) {
   border-radius: var(--border-radius);
