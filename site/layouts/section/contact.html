@@ -8,19 +8,20 @@
 		
 		{{ .Content }}
 		
-		<div class="flex-column-ns mb3">
+		<div class="mb3">
 			{{ range .Params.contact_entries }}
 			<div>
 				<h4 class="f4 b lh-title mb2 primary">{{ .heading }}</h4>
-				<p class="colg4">{{ .text }}</p>
+				<p class="colg4 ml2">{{ .text }}</p>
 			</div>
 			{{ end }}
 		</div>
 		
-		<!-- {{ partial "contact-form" . }} -->
-		
 	</div>
 </div>
+<div class="pv6 pv6-l ph3 contain bg-center" style="background-image: url('{{.Params.image}}')">
+</div>
 
-{{ partial "jumbotron" (dict "imageUrl" .Params.image)}}
+
+<!-- {{ partial "jumbotron" (dict "imageUrl" .Params.image)}} -->
 {{ end }}
